@@ -1,0 +1,95 @@
+/* 
+	Section Background (bg.css)
+	
+	Table of Content
+	- general settings for section & subheader
+	- general background image for subheader
+	- background settings for page subheader
+	- background settings for single project subheader
+	- background settings for section
+	- media query
+/*
+
+
+/* general settings for section & subheader */
+section,#subheader{
+-webkit-background-size: 100% !important;
+-moz-background-size: 100% !important;
+-o-background-size: 100% !important;
+background-size: 100% !important;
+}
+
+
+/* general background image for subheader */
+#subheader{
+background:url(../images/background/bg-subheader.jpg)top fixed;
+}
+
+
+/* background settings for page subheader */
+.page-about #subheader{background-image:url(../images/background/subheader-1.jpg);}
+.page-blog #subheader{background-image:url(../images/background/subheader-2.jpg);}
+.page-book #subheader{background-image:url(../images/background/subheader-3.jpg);}
+.page-contact #subheader{background-image:url(../images/background/subheader-4.jpg);}
+.page-event #subheader{background-image:url(../images/background/subheader-5.jpg);}
+.page-menu #subheader{background-image:url(../images/background/subheader-6.jpg);}
+
+
+/* background settings for single project subheader */
+.page-project-1 #subheader{background-image:url(../images/background/subheader-project-1.jpg);}
+.page-project-2 #subheader{background-image:url(../images/background/subheader-project-2.jpg);}
+.page-project-3 #subheader{background-image:url(../images/background/subheader-project-3.jpg);}
+.page-project-4 #subheader{background-image:url(../images/background/subheader-project-4.jpg);}
+.page-project-5 #subheader{background-image:url(../images/background/subheader-project-5.jpg);}
+
+
+/* background settings for section */
+#section-features{ background:url(../images/background/bg-1.jpg) top fixed;}
+#section-features-page-dark{ background:url(../images/background/bg-4.jpg) top fixed;}
+#section-steps{ background:url(../images/background/bg-1.jpg) top fixed;}
+#section-hero-1{ background:url(../images/background/bg-3.jpg) top fixed;}
+#section-deco-1{ background:url(../images/background/bg-4.jpg) top fixed;}
+#section-deco-2{ background:url(../images/background/bg-5.jpg) top fixed;}
+#section-book-form{ background:url(../images/background/bg-5.jpg) top fixed;}
+#section-book-form-2{ background:url(../images/background/bg-2.jpg) top;}
+#section-book-form-page-dark{ background:url(../images/background/bg-6.jpg) top fixed;}
+#section-ts{ background:url(../images/background/bg-7.jpg) top fixed;}
+
+
+#section-partners{ background:#eee;}
+#section-partners{ background:#eee;}
+
+#explore-1{background:#1a2530;}
+#explore-1.side-bg .background-image {background:url(../images/background/bg-side-1.jpg) top;}
+#sub-about-1.side-bg .background-image {background:url(../images/background/bg-side-1.jpg) top;}
+#sub-about-2.side-bg .background-image {background:url(../images/background/bg-side-2.jpg) top;}
+#sub-menu-1.side-bg .background-image {background:url(../images/background/bg-side-3.jpg) top;}
+#sub-menu-2.side-bg .background-image {background:url(../images/background/bg-side-4.jpg) top;}
+#sub-menu-3.side-bg .background-image {background:url(../images/background/bg-side-5.jpg) top;}
+#section-welcome.side-bg .background-image {background:url(../images/background/bg-side-6.jpg) top;}
+
+/* misc */
+#section-portfolio{width:101%; overflow:hidden;}
+#view-all-projects, #call-to-action{padding:60px 0 60px 0;}
+
+
+
+/* media query */
+@media only screen and (min-device-width: 768) and (max-device-width: 1024) and (orientation: portrait){
+section,#subheader{
+-webkit-background-size: auto 100% !important;
+-moz-background-size: auto 100% !important;
+-o-background-size: auto 100% !important;
+background-size: auto 100% !important;
+background-attachment:scroll !important;
+}
+}
+@media only screen and (max-width: 480px) {
+section,#subheader{
+-webkit-background-size: auto 100% !important;
+-moz-background-size: auto 100% !important;
+-o-background-size: auto 100% !important;
+background-size: auto 100% !important;
+background-attachment:scroll !important;
+}
+}

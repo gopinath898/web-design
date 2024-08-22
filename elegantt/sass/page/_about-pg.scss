@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+##	about page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#4.0	overview-section
+--------------------------------------------------------------*/
+.overview-section {
+	padding-bottom: 0;
+
+	@include media-query(1199px) {
+		padding-top: 80px;
+	}
+
+	@include media-query(767px) {
+		padding-top: 60px;
+	}
+	
+	.content > p:first-child {
+		font-family: $heading-font;
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: normal;
+		color: $heading-color;
+		padding-right: 75px;
+		margin: -10px 0 1.9em;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: 20px;
+			padding-right: 0;
+		}
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: 16px;
+		}
+
+		span {
+			font-weight: bold;
+		}
+	}
+
+	.overview-pic-video {
+		overflow: hidden;
+		margin: 0 -15px 55px;
+
+		@include media-query(767px) {
+			margin: 0 -10px 40px;
+		}
+
+		> div {
+			width: 50%;
+			padding: 0 15px;
+			float: left;
+
+			@include media-query(767px) {
+				padding: 0 10px;
+			}
+		}
+
+		.img-holder {
+			position: relative;
+		}
+
+		.img-holder a {
+			width: 41px;
+			height: 39px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include center-by-translating();
+		}
+	}
+
+	.video-holder {
+		position: relative;
+
+		a {
+			font-size: 70px;
+			font-size: calc-rem-value(70);
+			color: $theme-primary-color;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include center-by-translating();
+
+			@include media-query(1199px) {
+				font-size: 50px;
+				font-size: 50px;
+			}
+
+			@include media-query(767px) {
+				font-size: 35px;
+				font-size: 35px;
+			}
+		}
+	}
+
+	.chart-pic {
+		margin: 20px 0 40px;
+
+		@include media-query(767px) {
+			display: none;
+		}
+	}
+
+	.chart-area {
+		height: 450px;
+		margin: 80px 0;
+
+		@include media-query(767px) {
+			height: 350px;
+			margin: 60px 0;
+		}
+
+		canvas {
+			height: 100%;
+		}
+	}
+
+	.content > p:last-child {
+		margin-bottom: 0;
+
+		@include media-query(767px) {
+			margin-top: 25px;
+		}
+	}
+}

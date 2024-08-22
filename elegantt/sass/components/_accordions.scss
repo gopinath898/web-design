@@ -1,0 +1,121 @@
+/*-------------------------------------------
+## accordions
+---------------------------------------------*/
+.theme-accordion {
+	.panel-default {
+		background-color: transparent;
+		border: 0;
+		@include rounded-border(0);
+		//box-shadow: 0 2px 2px 0 lighten($black, 80%);
+		@include round-box-shadow(lighten($black, 85%), 15px, 0);
+
+		.panel-heading + .panel-collapse >.panel-body {
+			background-color: $white;
+			padding: 20px 150px 20px 35px;
+			border: 0;
+			margin-top: 8px;
+			position: relative;
+
+			@include media-query(1199px) {
+				padding: 30px;
+			}
+
+			@include media-query(991px) {
+				padding: 20px;
+			}
+		}
+	}
+
+	.panel + .panel {
+		margin-top: 15px;
+	}
+
+	.panel-body .img-holder {
+		position: absolute;
+		right: 35px;
+		top: 30px;
+
+		@include media-query(1199px) {
+			position: static;
+			margin-bottom: 10px;
+		}
+	}
+
+	.panel-heading {
+		padding: 0;
+		@include round-box-shadow(lighten($black, 85%), 15px, 0);
+
+		a {
+			background-color: $white;
+			display: block;
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: bold;
+			color: $heading-color;
+			padding: 12px 35px;
+			position: relative;
+
+			@include media-query(991px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+				padding: 10px 20px;
+			}
+		}
+
+		a:after {
+			font-family: "FontAwesome";
+			content: "\f057";
+			position: absolute;
+			right: 25px;
+			top: 50%;
+			@include translatingY();
+
+			@include media-query(991px) {
+				right: 20px;
+			}
+
+			@include media-query(767px) {
+				display: none;
+			}
+		}
+
+		.collapsed:after {
+			content: "\f055";
+		}
+	}
+
+	.panel-default .panel-body p {
+		@include media-query(991px) {
+			font-size: 15px;
+			font-size: clac-rem-value(15);
+		}
+	}
+
+	.panel-default .panel-body .read-more {
+		font-weight: 600;
+		color: $theme-primary-color;
+		display: inline-block;
+		margin-top: 5px;
+	}
+}
+
+/*** theme accordion s2 ***/
+.theme-accordion-s2 {
+	@extend .theme-accordion;
+
+	.panel-heading a {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+
+	.panel-heading .collapsed {
+		background-color: $white;
+		color: $heading-color;
+	}
+
+	.panel-default .panel-heading + .panel-collapse > .panel-body {
+		@include widther(1200px) {
+			padding: 20px 35px;
+		}
+	}
+}

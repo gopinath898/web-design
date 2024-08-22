@@ -1,0 +1,20 @@
+/*-------------------------------------------
+## services grids
+---------------------------------------------*/
+.dots-style-1 {
+	.owl-controls .owl-dots .owl-dot span {
+		background-color: #adadad;
+		width: 14px;
+		height: 14px;
+		margin: 0 7px;
+
+		@include media-query(991px) {
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	.owl-controls .owl-dots .active span {
+		background: $theme-primary-color;
+	}
+}

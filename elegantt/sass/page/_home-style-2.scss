@@ -1,0 +1,287 @@
+/*--------------------------------------------------------------
+##	home style 2
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#2.0	services-serction-s2
+--------------------------------------------------------------*/
+.services-serction-s2 {
+	padding-bottom: 100px;
+
+	@include media-query(991px) {
+		padding-bottom: 70px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 60px;
+	}
+
+	.services-s2-grids > .col {
+		margin-bottom: 20px;
+
+		@include media-query(600px) {
+			width: 100%;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#2.1	how-we-work
+--------------------------------------------------------------*/
+.how-we-work {
+	position: relative;
+
+	&:before {
+		content: "";
+		@include background-style("../images/background.jpg", center center, cover, no-repeat, local);
+		// background-image:url("/images/background.jpg") ;
+		width: 100%;
+		height: 385px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.section-title-s6 h2,
+	.section-title-s6 p {
+		color: $white;
+	}
+
+	.grid {
+		background-color: $theme-secondary-color;
+		text-align: center;
+		padding: 35px;
+
+		@include media-query(991px) {
+			border-bottom: 1px solid darken($theme-secondary-color, 5%);
+		}
+
+		@include media-query(767px) {
+			padding: 30px 15px;
+		}
+	}
+
+	.grid h3,
+	.grid p {
+		color: $white;
+	}
+
+	.grid .icon .fi:before {
+		font-size: 45px;
+		font-size: calc-rem-value(45);
+		color: $theme-primary-color;
+
+		@include media-query(1199px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+		}
+
+		@include media-query(767px) {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+		}
+	}
+
+	.grid h3 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		font-weight: normal;
+		margin: 0.4em 0 0.5em;
+
+		@include media-query(1199px) {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+		}
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.grid p {
+		color: #c4bcbc;
+
+		@include media-query(1199px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+
+		@include media-query(767px) {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+		}
+	}
+}
+
+.home-style-2 .fun-fact {
+	padding-top: 0;
+}
+
+
+/*--------------------------------------------------------------
+#2.2	latest-projects-s2
+--------------------------------------------------------------*/
+.latest-projects-s2 {
+	background-color: $section-bg-color;
+		
+	.grid {
+		position: relative;
+
+		&:before {
+			content: "";
+			@include linear-gradient-overlay(top, transparent 20%, transparentize($black, 0.2));
+		}
+	}
+
+	.grid .details {
+		padding: 45px 40px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		@include media-query(991px) {
+			padding: 35px 20px;
+		}
+	}
+
+	.grid h3 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		font-weight: normal;
+		margin: 0 0 0.2em;
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		a {
+			color: $white;
+		}
+	}
+
+	.grid .location {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		color: $theme-primary-color;
+		margin: 0;
+
+		@include media-query(991px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+
+		@include media-query(767px) {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+		}
+	}
+
+	.left-col {
+		@include widther(1200px) {
+			padding-right: 0;
+		}
+
+		.grid {
+			@include media-query(1199px) {
+				max-width: 615px;
+				margin: 0 auto 25px;
+			}
+		}
+
+	}
+
+	.right-col {
+		position: relative;
+
+		@include media-query(1199px) {
+			margin: 0 -10px;
+		}
+
+		.grid {
+			width: 50%;
+			float: left;
+			padding: 0 10px 20px;
+
+			&:before {
+				display: none;
+			}
+
+			@include media-query(500px) {
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.inner {
+			position: relative;
+			overflow: hidden;
+
+			@include widther(1200px) {
+				height: 193px;
+			}
+
+			@include media-query(1199px) {
+				//max-height: 220px;
+			}
+
+			&:before {
+				content: "";
+				@include linear-gradient-overlay(top, transparent 20%, transparentize($black, 0.2));
+			}	
+		}
+
+		.inner img {
+			width: 100%;
+		}
+
+		.grid .details {
+			padding: 20px;
+		}
+
+		.grid h3 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		.grid .location {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+
+			@include media-query(767px) {
+				font-size: 13px;
+				font-size: calc-rem-value(13);
+			}
+		}
+	}
+
+	.all-projects {
+		text-align: center;
+		margin-top: 55px;
+
+		@include media-query(991px) {
+			margin-top: 40px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 20px;
+		}
+	}
+
+}

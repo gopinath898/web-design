@@ -1,0 +1,181 @@
+//faq__section__wrapper
+.faq__section__wrapper {
+    position: relative;
+    z-index: 1;
+    .big-style-text {
+        top: 8%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .shapes__1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .shapes__2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+//faq__que__list
+.faq__que__list {
+    .accordion-item {
+        border: 0;
+        background: $white;
+        box-shadow: 5px 15px 40px 0px rgba(24, 24, 24, 0.05);
+        button:focus,
+        input:focus,
+        input:focus,
+        textarea,
+        textarea:focus {
+            outline: 0;
+        }
+        .accordion-button {
+            transition: unset;
+            color: $heding;
+            font-size: 24px;
+            font-family: $urbanist;
+            font-weight: 700;
+            line-height: 24px;
+            border: 0;
+            box-shadow: none;
+            text-decoration: 1px solid $white;
+            border-radius: 0;
+            padding: 0;
+            padding: 30px 25px 20px 25px;
+            position: relative;
+            box-shadow: 0;
+            -webkit-transition: unset;
+            -moz-transition: unset;
+            -ms-transition: unset;
+            -o-transition: unset;
+            word-wrap: normal;
+            display: inline-block;
+            background: transparent;
+
+            &.collapsed {
+                padding-bottom: 24px;
+                background: rgba($white, 0.05);
+                border-bottom: 2px solid $white;
+            }
+            @media #{$md} {
+                padding: 21px 20px;
+                font-size: 18px;
+            }
+            @media #{$xs} {
+                padding: 21px 15px;
+                font-size: 18px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+            }
+
+            &::before {
+                content: "\F286";
+                position: absolute;
+                font-family: "bootstrap-icons";
+                font-size: 20px;
+                font-weight: 300;
+                color: $theme-color;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%) rotate(0deg);
+                transition: 0.3s linear;
+                z-index: 1;
+                @media #{$md} {
+                    right: 10px;
+                    font-size: 16px;
+                }
+                @media #{$xs} {
+                    right: 10px;
+                    font-size: 16px;
+                }
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .collapsed {
+            border: 0;
+            &::before {
+                color: $heding;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+        .accordion-body {
+            padding: 0;
+            padding: 0px 48px 10px 25px;
+            @media #{$xs} {
+                padding: 0 15px 10px 15px;
+            }
+        }
+    }
+}
+
+//faq__img__wrapper
+.faq__img__wrapper {
+    position: relative;
+    z-index: 1;
+    .counter__wrapper {
+        background: $theme-color;
+        padding: 20px;
+        position: absolute;
+        z-index: 1;
+        right: 35px;
+        bottom: 0;
+        h5 {
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: $white;
+            font-size: 48px;
+            line-height: 1;
+            @media #{$max-md} {
+                font-size: 32px;
+            }
+        }
+    }
+    .faq__img__main {
+        margin-left: -55px;
+    }
+    .faq__thumb1 {
+        border-left: 15px solid $white;
+        border-bottom: 15px solid $white;
+        position: absolute;
+        right: -40px;
+        top: -80px;
+        z-index: 1;
+    }
+
+    .faq__thumb2 {
+        border-left: 15px solid $white;
+        border-top: 15px solid $white;
+        border-right: 15px solid $white;
+        position: absolute;
+        z-index: 1;
+        bottom: -80px;
+        left: 25px;
+    }
+    .faq__thumb3 {
+        position: absolute;
+        left: 21px;
+        bottom: -12px;
+        z-index: -1;
+    }
+    @media #{$max-lg} {
+        .faq__img__main {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 08 Nov 2023 11:23:13 at https://kingsclub.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://kingsclub.in/ -O1 "D:\club" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:24:31	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://kingsclub.in/)
+11:26:24	Warning: 	Link https://kingsclub.in/rooms/ not scanned (follow robots meta tag)
+11:29:55	Warning: 	Link https://kingsclub.in/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+11:30:16	Error: 	"Not Found" (404) at link https://kingsclub.in/POST (from https://connect.facebook.net/en_US/fbevents.js)
+11:30:16	Error: 	"Not Found" (404) at link https://kingsclub.in/schema.org/ (from https://connect.facebook.net/en_US/fbevents.js)
+11:30:16	Error: 	"Not Found" (404) at link https://kingsclub.in/b.resolvedLink (from https://connect.facebook.net/en_US/fbevents.js)
+11:30:16	Error: 	"Not Found" (404) at link https://kingsclub.in/signals/iwl.js (from https://connect.facebook.net/en_US/fbevents.js)
+11:30:25	Warning: 	Moved Permanently for https://kingsclub.in/?p=333
+11:30:25	Warning: 	File has moved from https://kingsclub.in/?p=333 to https://kingsclub.in/sports/
+11:30:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=394
+11:30:38	Warning: 	File has moved from https://kingsclub.in/?p=394 to https://kingsclub.in/restaurant/
+11:30:45	Warning: 	Moved Permanently for https://kingsclub.in/?p=410
+11:30:45	Warning: 	File has moved from https://kingsclub.in/?p=410 to https://kingsclub.in/banquets/
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-8-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-9.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-10.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-1-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-2-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-3-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-5-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-6-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Birthday-7-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Event-1-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Event-2-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Event-3-1-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Event-5.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Event-6-1-scaled.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Gallery-2.jpeg (from https://kingsclub.in/banquets/)
+11:30:45	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/uploads/2021/03/Marriage-Gallery-5.jpeg (from https://kingsclub.in/banquets/)
+11:30:46	Warning: 	Moved Permanently for https://kingsclub.in/?p=2308
+11:30:46	Warning: 	File has moved from https://kingsclub.in/?p=2308 to https://kingsclub.in/blog/
+11:31:18	Warning: 	Moved Permanently for https://kingsclub.in/?p=2370
+11:31:18	Warning: 	File has moved from https://kingsclub.in/?p=2370 to https://kingsclub.in/summer-camp/
+11:31:21	Warning: 	Moved Permanently for https://kingsclub.in/?p=296
+11:31:21	Warning: 	File has moved from https://kingsclub.in/?p=296 to https://kingsclub.in/contact/
+11:31:21	Warning: 	Moved Permanently for https://kingsclub.in/?p=1155
+11:31:21	Warning: 	File has moved from https://kingsclub.in/?p=1155 to https://kingsclub.in/club-membership/
+11:31:23	Warning: 	Moved Permanently for https://kingsclub.in/?p=764
+11:31:23	Warning: 	File has moved from https://kingsclub.in/?p=764 to https://kingsclub.in/table-tennis/
+11:31:23	Warning: 	Moved Permanently for https://kingsclub.in/?p=687
+11:31:23	Warning: 	File has moved from https://kingsclub.in/?p=687 to https://kingsclub.in/badminton/
+11:31:24	Warning: 	Moved Permanently for https://kingsclub.in/?p=666
+11:31:24	Warning: 	File has moved from https://kingsclub.in/?p=666 to https://kingsclub.in/outdoor-swimming-pool/
+11:31:25	Warning: 	Moved Permanently for https://kingsclub.in/?p=1168
+11:31:25	Warning: 	File has moved from https://kingsclub.in/?p=1168 to https://kingsclub.in/indoor-swimming-pool/
+11:31:26	Warning: 	Moved Permanently for https://kingsclub.in/?p=769
+11:31:26	Warning: 	File has moved from https://kingsclub.in/?p=769 to https://kingsclub.in/gym/
+11:31:28	Warning: 	Moved Permanently for https://kingsclub.in/?p=964
+11:31:28	Warning: 	File has moved from https://kingsclub.in/?p=964 to https://kingsclub.in/yoga/
+11:31:30	Warning: 	Moved Permanently for https://kingsclub.in/?p=774
+11:31:30	Warning: 	File has moved from https://kingsclub.in/?p=774 to https://kingsclub.in/fitness-dance-studio/
+11:31:32	Warning: 	Moved Permanently for https://kingsclub.in/?p=701
+11:31:32	Warning: 	File has moved from https://kingsclub.in/?p=701 to https://kingsclub.in/billiards/
+11:31:33	Warning: 	Moved Permanently for https://kingsclub.in/?p=692
+11:31:33	Warning: 	File has moved from https://kingsclub.in/?p=692 to https://kingsclub.in/indoor-party-hall/
+11:31:33	Warning: 	Moved Permanently for https://kingsclub.in/?p=638
+11:31:33	Warning: 	File has moved from https://kingsclub.in/?p=638 to https://kingsclub.in/party-and-marriage-hall/
+11:31:34	Warning: 	Moved Permanently for https://kingsclub.in/?p=627
+11:31:34	Warning: 	File has moved from https://kingsclub.in/?p=627 to https://kingsclub.in/cafe/
+11:31:35	Warning: 	Moved Permanently for https://kingsclub.in/?p=865
+11:31:35	Warning: 	File has moved from https://kingsclub.in/?p=865 to https://kingsclub.in/kings-club-restrobar/
+11:31:35	Warning: 	Moved Permanently for https://kingsclub.in/?p=882
+11:31:35	Warning: 	File has moved from https://kingsclub.in/?p=882 to https://kingsclub.in/skylounge/
+11:31:37	Warning: 	Moved Permanently for https://kingsclub.in/?p=887
+11:31:37	Warning: 	File has moved from https://kingsclub.in/?p=887 to https://kingsclub.in/presidential-lounge/
+11:31:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=295
+11:31:38	Warning: 	File has moved from https://kingsclub.in/?p=295 to https://kingsclub.in/about-us/
+11:31:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=3
+11:31:38	Warning: 	File has moved from https://kingsclub.in/?p=3 to https://kingsclub.in/privacy-policy/
+11:31:38	Error: 	"Method Not Allowed" (405) at link https://kingsclub.in/xmlrpc.php (from https://kingsclub.in/privacy-policy/)
+11:31:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=1421
+11:31:38	Warning: 	File has moved from https://kingsclub.in/?p=1421 to https://kingsclub.in/disclaimer/
+11:31:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=1427
+11:31:38	Warning: 	File has moved from https://kingsclub.in/?p=1427 to https://kingsclub.in/refund-policy/
+11:31:38	Warning: 	Moved Permanently for https://kingsclub.in/?p=2465
+11:31:38	Warning: 	File has moved from https://kingsclub.in/?p=2465 to https://kingsclub.in/careers/
+11:31:38	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/plugins/ht-mega-for-elementor/assets/css/img/gallery/bgDescription.png (from https://kingsclub.in/wp-content/cache/wpfc-minified/9lvx1pb8/8hxf1.css)
+11:31:38	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/plugins/ht-mega-for-elementor/assets/css/img/gallery/gallery-e1.jpg (from https://kingsclub.in/wp-content/cache/wpfc-minified/9lvx1pb8/8hxf1.css)
+11:31:38	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/plugins/ht-mega-for-elementor/assets/css/img/others/business-shape.png (from https://kingsclub.in/wp-content/cache/wpfc-minified/9lvx1pb8/8hxf1.css)
+11:31:38	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/plugins/ht-mega-for-elementor/assets/css/img/bg/bg-image-40.jpg (from https://kingsclub.in/wp-content/cache/wpfc-minified/9lvx1pb8/8hxf1.css)
+11:31:39	Warning: 	Moved Permanently for https://kingsclub.in/?p=572
+11:31:39	Warning: 	File has moved from https://kingsclub.in/?p=572 to https://kingsclub.in/reservation/
+11:31:39	Warning: 	Moved Permanently for https://kingsclub.in/?p=2606
+11:31:39	Warning: 	File has moved from https://kingsclub.in/?p=2606 to https://kingsclub.in/luxury-wedding/
+11:31:41	Warning: 	Moved Permanently for https://kingsclub.in/?p=2569
+11:31:41	Warning: 	File has moved from https://kingsclub.in/?p=2569 to https://kingsclub.in/food-station-ideas-for-banquet-events/
+11:31:41	Warning: 	Moved Permanently for https://kingsclub.in/?p=2331
+11:31:41	Warning: 	File has moved from https://kingsclub.in/?p=2331 to https://kingsclub.in/banquet-hall-in-bangalore/
+11:31:41	Error: 	"Not Found" (404) at link https://kingsclub.in/wp-content/plugins/ht-mega-for-elementor/assets/css/DataTables-1.10.18/images/sort_both.png (from https://kingsclub.in/wp-content/cache/wpfc-minified/1fxhw0ae/8hxlh.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 28 seconds : 615 links scanned, 557 files written (100412341 bytes overall) [91551687 bytes received at 180219 bytes/sec], 14334788 bytes transferred using HTTP compression in 265 files, ratio 20%, 20.1 requests per connection
+(27 errors, 62 warnings, 0 messages)

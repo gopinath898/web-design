@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+##	about page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#13.0	blog-content-section
+--------------------------------------------------------------*/
+.blog-pg .blog-s2-grids > .col {
+	margin-bottom: 45px;
+}
+
+.blog-pg .pagination {
+	margin-top: 40px;
+
+	@include media-query(1199px) {
+		margin-top: 20px;
+	}
+
+	@include media-query(991px) {
+		margin-top: 0;
+	}
+}
+
+.blog-with-sidebar-page .blog-sidebar {
+	@include media-query(991px) {
+		margin-top: 90px;
+	}
+
+	@include media-query(767px) {
+		margin-top: 60px !important;
+	}
+}
+
+.left-sidebar-page {
+	.blog-with-sidebar-section  .blog-sidebar {
+		@include media-query(1199px) {
+			padding: 0 50px 0 15px;
+		}
+
+		@include media-query(991px) {
+			padding: 0 0 0 15px;
+			margin-top: 90px;
+		}
+	}
+}
+
+.blog-with-right-sidebar .blog-with-sidebar-section .blog-sidebar {
+	@include media-query(1199px) {
+   		padding-left: 50px;
+	}
+
+	@include media-query(991px) {
+   		padding-left: 15px;
+	}
+
+
+}

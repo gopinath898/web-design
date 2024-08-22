@@ -1,0 +1,12 @@
+.social-links {
+	overflow: hidden;
+
+	li {
+		float: left;
+
+		a {
+			color: $white;
+			text-align: center;
+		}
+	}
+}

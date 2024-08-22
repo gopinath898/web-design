@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.area83.in	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	kmrgfzdtixp4ozh2hnrcy1ol
+www.area83.in	TRUE	/	FALSE	1999999999	SameSite	Lax
+www.area83.in	TRUE	/	FALSE	1999999999	a83uid	cbb2f277-781a-4094-9eb8-1a4b2467c176
+

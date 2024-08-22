@@ -1,0 +1,110 @@
+/*-------------------------------------------
+## Client login area
+---------------------------------------------*/
+.client-login-area {
+	background-color: transparentize($black, 0.05);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+	@include transition-time(0.3s);
+
+	.client-login-form {
+		background-color: $white;
+		width: 300px;
+		padding: 40px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%) scale(0,0);
+		-moz-transform: translate(-50%, -50%) scale(0,0);
+		-o-transform: translate(-50%, -50%) scale(0,0);
+		-ms-transform: translate(-50%, -50%) scale(0,0);
+		transform: translate(-50%, -50%) scale(0,0);
+		@include round-box-shadow(transparentize($white, 0.7), 15px, 0);
+		@include transition-time(0.4s);
+
+		@include media-query(767px) {
+			width: 280px;
+			padding: 30px;
+		}
+	}
+
+	h3 {
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		font-weight: normal;
+		margin: 0 0 1em;
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.form input {
+		@include media-query(767px) {
+			height: 30px;
+		}
+	}
+
+	.form label {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		font-weight: normal;
+		color: lighten($black, 20%);
+
+		@include media-query(767px) {
+			font-size: 13px;
+			font-size: calc-rem-value(13);
+		}
+	}
+
+	.form > div {
+		margin-bottom: 15px;
+	}
+
+	.form > div:last-child {
+		margin-bottom: 0;
+	}
+
+	.form button {
+		background-color: $theme-primary-color;
+		width: 100%;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		color: $white;
+		font-weight: 600;
+		text-transform: uppercase;
+		border: 0;
+		outline: 0;
+
+		@include media-query(767px) {
+			height: 30px;
+			line-height: 27px;
+			font-size: 13px;
+			font-size: calc-rem-value(13);
+		}
+	}
+}
+
+.client-login-area-fadein {
+	opacity: 1;
+	visibility: visible;
+}
+
+.client-login-area {
+	.client-login-form-popup {
+		-webkit-transform: translate(-50%, -50%) scale(1,1);
+		-moz-transform: translate(-50%, -50%) scale(1,1);
+		-o-transform: translate(-50%, -50%) scale(1,1);
+		-ms-transform: translate(-50%, -50%) scale(1,1);
+		transform: translate(-50%, -50%) scale(1,1);
+	} 
+}

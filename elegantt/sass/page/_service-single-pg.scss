@@ -1,0 +1,185 @@
+/*--------------------------------------------------------------
+##	team page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#12.0	service-single-content-wrapper
+--------------------------------------------------------------*/
+.services-single-pg .page-title {
+	@include background-style("../images/service-background.jpg", center center, cover, no-repeat, local);
+}
+
+.services-single-pg  .service-single-content {
+
+	/*** service-details ***/
+	.service-details h2 {
+		font-size: 35px;
+		font-size: calc_rem_value(35);
+		line-height: 1.3em;
+		font-weight: normal;
+		margin: 0 0 0.95em;
+
+		@include media-query(991px) {
+			font-size: 32px;
+			font-size: calc_rem_value(32);
+		}
+
+		@include media-query(767px) {
+			font-size: 22px;
+			font-size: calc_rem_value(24);
+		}		
+	}
+
+	.service-details p {
+		margin: 0 0 30px;
+	}
+
+	.service-details ul li {
+		color: $text-color;
+		margin-bottom: 20px;
+
+		@include media-query(767px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.service-details ul li:last-child {
+		margin-bottom: 0;
+	}
+
+	.service-details ul i {
+		color: $theme-secondary-color;
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.theme-accordion-s2 {
+		margin-top: 50px;
+
+		@include media-query(767px) {
+			margin-top: 40px;
+		}
+	}
+
+	.service-single-slider  {
+		margin-top: 80px;
+
+		@include media-query(991px) {
+			margin-top: 60px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 40px;
+		}
+	}
+
+	.service-single-slider .owl-controls {
+		margin-top: 40px;
+
+		@include media-query(767px) {
+			margin-top: 30px;
+		}
+	}
+
+	.service-single-slider .owl-dots > div span,
+	.service-single-slider .owl-dots > .active span {
+		width: 15px;
+		height: 15px;
+		background: $theme-primary-color;
+		margin: 0 10px 0 0;
+		position: relative;
+
+		@include media-query(767px) {
+			width: 13px;
+			height: 13px;
+			margin: 0 10px 0 0;
+		}
+	}
+
+	.service-single-slider .owl-dots > div span:before {
+		content: "";
+		background: $white;
+		width: 11px;
+		height: 11px;
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		@include rounded-border();
+
+		@include media-query(767px) {
+			width: 11px;
+			height: 11px;
+			left: 1px;
+			top: 1px;
+		}
+	}
+
+	.service-single-slider .owl-dots > div:hover span,
+	.service-single-slider .owl-dots > div:hover span:before,
+	.service-single-slider .owl-dots > .active span,
+	.service-single-slider .owl-dots > .active span:before  {
+		background: $theme-secondary-color;
+	}
+
+
+	/*** service single tab ***/
+	.service-single-tab {
+		margin-top: 80px;
+
+		@include media-query(991px) {
+			margin-top: 60px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 40px;
+		}
+	}
+
+	.service-single-tab .nav {
+		overflow: hidden;
+
+		li {
+			float: left;
+		}
+
+		a {
+			font-size: calc_rem_value(18);
+			font-weight: bold;
+			color: $theme-secondary-color;
+			padding: 10px 45px;
+
+			@include media-query(767px) {
+				font-size: calc_rem_value(14);
+				padding: 10px 17px;
+			}
+		}
+
+		a:hover {
+			background: none;
+		}
+
+		.active a {
+			background: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		padding-top: 35px;
+
+		@include media-query(767px) {
+			padding-top: 25px;
+		}
+
+		.tab-pane p {
+			margin-bottom: 35px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+Bonus :
+	- About
+		+ 2 Pages
+
+	- Pages
+		+ Element
+
+	- Contact
+		+ 1 Pages
+
+/* In Progress */
+	- Optimize Images
+	- Speed	
+	- Color Theme
+	- Add "add to cart" button
+	- Add Services Detail 3 Page Clone
+
+22/6
+	- Update 
+		Comming soon
+		404
+		Blog grid 2 Columns
+		Contact 2
+
+23/6
+	- Validate 
+	- Add Color Theme
+	- Optimize Images
+	- Add "add to cart" button
+	- Add Services Detail 3 Page Clone
+
+28/ 6
+	- Fix all Color 
+	- Fix Mobile
+	- Fix Wow
+	- Add Clone Blog Detail, Shop Catalogue
+	- Add New Preload
+	- Replace Images Blog Home 1
+
+6/ 7
+	- Fix all wow home 1 -> home 6
+	- add/remove some padding in sections
+	- Fix header home 2
+
+11/ 7
+	- Remove some wow effect / Hover effect
+	- all button to 2 styles
+	- Add link,fix link
+	- remove 3 pages funiture.html, lighting.html, accessorie.html
+12 / 7
+	
+	- Replace img to placeholder
+	- add folder unmin css & unmin js
+13 / 7
+	- minify js/css
+	- add unmin js/css in folder
+	- change font-size in mobile
+	- background portfolio, our team --> black on mobile
+	- change .on insteal .hover/.click/.scroll
+	- add use:strict
+
+17 / 7
+	- Remove all minify js/css

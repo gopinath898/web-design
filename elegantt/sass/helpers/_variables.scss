@@ -1,0 +1,31 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Open+Sans:400,600');
+
+// fonts
+$base-font-size: 16;
+
+$opensnas: 'Open Sans', sans-serif;
+$merriweather: 'Merriweather', serif;;
+
+$base-font: $opensnas;
+$heading-font: $merriweather;
+
+
+// color
+$dark-gray: #2a2a2a;
+$light-gray: #f6f6f4;
+$white: #fff;
+$black: #000;
+$orange: #ff8e31;
+$powder-black: #15191f;
+$powder-gray: #686e76;
+$deeper-gray: #1f252e;
+
+$theme-primary-color: $orange;
+$theme-secondary-color: $powder-black;
+$body-bg-color: $white;
+$section-bg-color: $light-gray;
+$text-color: $powder-gray;
+$heading-color: $deeper-gray;

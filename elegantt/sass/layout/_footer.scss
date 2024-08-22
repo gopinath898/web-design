@@ -1,0 +1,272 @@
+/*--------------------------------------------------------------
+#0.5	footer
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: $theme-secondary-color;
+	padding: 115px 0 100px;
+
+	@include media-query(1199px) {
+		padding: 115px 0 35px;
+	}
+
+	@include media-query(767px) {
+		padding: 80px 0 20px;
+	}
+
+
+	h3,
+	h4,
+	h5,
+	h6,
+	span,
+	p,
+	li,
+	a {
+		color: $white;
+	}
+
+	.container > .row > .col  {
+		@include media-query(1199px) {
+			margin-bottom: 80px;
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 50px;
+		}
+
+		@include media-query(650px) {
+			width: 100%;
+		}
+	}
+
+	.widget > h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: normal;
+		font-weight: normal;
+		margin: 0 0 1.8em;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	/*** about widget ***/
+	.about-widget {
+		.logo {
+			@include background-style("../images/footer-logo.png", left center, auto, no-repeat, local);
+			position: relative;
+			padding-left: 42px;
+
+			@include media-query(991px) {
+				padding: 5px 0 5px 42px;
+			}
+		}
+
+		p {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			margin: 0;
+		}
+	}
+
+
+	/*** news widget ***/
+	.news-widget {
+		@include widther(1200px) {
+			padding-left: 15px;
+		}
+	}
+
+	.news-widget li {
+		min-height: 65px;
+		position: relative;
+		padding-left: 70px;
+		margin-bottom: 40px;
+
+		@include media-query(767px) {
+			margin-bottom: 25px;
+		}
+
+		.entry-media {
+			min-height: 65px;
+			position: absolute;
+			left: 0;
+		}
+
+		h5 {
+			font-family: $base-font;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			line-height: 1.3em;
+			font-weight: normal;
+			margin: 0 0 0.3em;
+
+			@include media-query(1199px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+		}
+
+		h5 a:hover {
+			color: $theme-primary-color;
+		}
+
+		.date {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			color: $theme-primary-color;
+		}
+	}
+
+	.news-widget ul li:last-child {
+		margin-bottom: 0;
+	}
+
+
+	/*** site map widget ***/
+	.site-map-widget ul li {
+		//margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+
+			a {
+				border: 0;
+				padding-bottom: 0;
+			}
+		}
+
+		&:first-child a {
+			padding-top: 0;
+		}
+
+		a {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			display: block;
+			border-bottom: 1px solid #323945;
+			padding: 5px 0;
+
+			&:hover {
+				color: $theme-primary-color;
+				border-color: $theme-primary-color;
+			}
+		}
+	}
+
+
+	/*** newsletter-widget ***/
+	.newsletter-widget {
+		margin-bottom: 55px;
+
+		@include media-query(767px) {
+			margin-bottom: 50px;
+		}
+
+		p {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			margin-top: -5px;
+			margin-bottom: 20px;
+
+			@include media-query(767px) {
+				margin: -10px 0 20px;
+			}
+		}
+
+		.form {
+			@include placeholder-style(#646c78, 14px, normal);
+		}
+
+		.form input {
+			background-color: transparent;
+			height: 45px;
+			color: $white;
+			border: 1px solid #323945;
+			padding: 0 75px 0 20px;
+			box-shadow: none;
+
+			@include media-query(767px) {
+				height: 40px;
+			}
+		}
+
+		.form > div {
+			position: relative;
+
+			button {
+				background-color: $theme-primary-color;
+				width: 60px;
+				height: 45px;
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+				color: $white;
+				border: 0;
+				outline: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				@include rounded-border(0);
+				@include transition-time(0.3s);
+
+				@include media-query(1199px) {
+					width: 50px;
+					font-size: 18px;
+					font-size: calc-rem-value(18);
+				}
+
+				@include media-query(767px) {
+					width: 50px;
+					height: 40px;
+					font-size: 18px;
+					font-size: calc-rem-value(18);
+				}
+			}
+
+			button:hover {
+				background-color: darken($theme-primary-color, 10%);
+			}
+		}
+	}
+
+
+	/*** social-media-widget ***/
+	.social-media-widget {
+
+		margin-top: -20px;
+
+		.social-links li {
+			margin-right: 28px;
+
+			@include media-query(1199px) {
+				margin-right: 15px;
+			}
+		}
+
+		.social-links a {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+
+			@include media-query(1199px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		.social-links a:hover {
+			color: $theme-primary-color;
+		}
+	}
+}

@@ -1,0 +1,204 @@
+//teams__section__wrapper
+.teams__section__wrapper {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 48%;
+        background: #f8f9fc;
+    }
+
+    .shapes__1 {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+    }
+
+    .big-style-text {
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 13%;
+    }
+}
+
+//teams
+.teams {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    .shapes__1 {
+        position: absolute;
+        z-index: -1;
+        right: 20px;
+        top: 22px;
+    }
+    &__thumb {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            text-align: center;
+            background: $heding;
+            width: 100%;
+            height: 420px;
+            display: inline-block;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    .teams__social {
+        position: absolute;
+        left: 0;
+        bottom: 120px;
+        z-index: 1;
+        transform: translateX(-100%);
+        @include transition(0.5s);
+    }
+    &:hover {
+        .teams__social {
+            transform: translateX(0);
+        }
+    }
+}
+
+.teams__social {
+    background: $theme-color;
+    padding: 20px 58px 20px 30px;
+    clip-path: polygon(85% 0, 100% 98%, 100% 100%, 0 100%, 0 0);
+    a {
+        color: $theme-color;
+        font-size: 20px;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        background: $white;
+        margin: 0 6px;
+        text-align: center;
+        &:hover {
+            color: $heding;
+        }
+    }
+    @media #{$max-lg} {
+        a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+}
+
+//teams__two
+.teams__two {
+    position: relative;
+    z-index: 1;
+    .teams__thumb {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            text-align: center;
+            // background: #181818;
+            background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+            background: -moz-linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+            background: -o-linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+            background: -ms-linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+            background: -webkit-linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%);
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            top: 0;
+        }
+    }
+    .teams__name {
+        color: $white;
+        font-size: 30px;
+        @media #{$max-lg} {
+            font-size: 24px;
+        }
+    }
+    .teams__description {
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .teams__social {
+        padding: 20px 20px 20px 14px;
+        background: $white;
+        a {
+            background: rgba($theme-color, 0.1);
+        }
+    }
+
+    .teams__content {
+        position: absolute;
+        left: 0;
+        right: 75px;
+        bottom: -2px;
+        z-index: 1;
+        @media #{$max-lg} {
+            right: 0;
+        }
+    }
+}
+
+//teams__slider__one
+.teams__slider__one {
+    .swiper-button-prev,
+    .swiper-button-next {
+        line-height: 60px;
+        top: auto;
+        bottom: 0px;
+    }
+    .swiper-button-prev {
+        left: 46%;
+        transform: translateX(-46%);
+    }
+    .swiper-button-next {
+        right: 42%;
+        transform: translateX(-46%);
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $white;
+        background: $heding;
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        color: $white;
+        background: $theme-color;
+    }
+
+    @media #{$max-lg} {
+        .swiper-button-prev {
+            left: 45%;
+        }
+        .swiper-button-next {
+            right: 39%;
+        }
+    }
+    @media #{$max-md} {
+        .swiper-button-prev {
+            display: none;
+        }
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}

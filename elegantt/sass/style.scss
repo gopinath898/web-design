@@ -1,0 +1,168 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	
+Version:        1.0.0
+Author:         themexriver
+URL:            http://themeforest.net/user/themexriver
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1	Theme Reset Style
+#0.2	Global Elements
+#0.3	header
+#0.4	hero-slider
+#0.5	footer
+#0.6	about-us
+#0.7	services-section
+#0.8	testimonials
+#0.9	latest-projects
+#1.0	fun-fact
+#1.1	faq-blog
+#1.2	partners-section
+#1.3	contact-section
+
+
+----------------------------------------------------------------
+##	home style 2
+----------------------------------------------------------------
+#2.0	services-serction-s2
+#2.1	how-we-work
+#2.2	latest-projects-s2
+
+
+----------------------------------------------------------------
+##	home style 3
+----------------------------------------------------------------
+#3.0	services-serction-s3
+#3.1	how-we-work-s2
+#3.2	latest-porjects-s3 
+#3.3	testimonials-s2-faq
+#3.4	latest-blog
+
+
+----------------------------------------------------------------
+##	about page
+----------------------------------------------------------------
+#4.0	overview-section
+
+
+----------------------------------------------------------------
+##	timeline page
+----------------------------------------------------------------
+#5.0	time-line-section
+
+
+----------------------------------------------------------------
+##	clients page
+----------------------------------------------------------------
+#6.0	clients-section
+
+
+----------------------------------------------------------------
+##	team page
+----------------------------------------------------------------
+#7.0	team-section
+
+
+----------------------------------------------------------------
+##	testimonials page
+----------------------------------------------------------------
+#8.0	page title
+
+
+----------------------------------------------------------------
+##	faq page
+----------------------------------------------------------------
+#9.0	page title
+
+
+----------------------------------------------------------------
+##	contact page
+----------------------------------------------------------------
+#10.0	page title
+
+
+----------------------------------------------------------------
+##	careers page
+----------------------------------------------------------------
+#11.0	careers-section
+
+
+----------------------------------------------------------------
+##	services single page
+----------------------------------------------------------------
+#12.0	service-single-content-wrapper
+
+
+----------------------------------------------------------------
+##	blog page
+----------------------------------------------------------------
+#13.0	blog-content-section
+
+
+----------------------------------------------------------------
+##	projects page
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/sticky-header";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/services-grids";
+@import "components/slider-dots";
+@import "components/accordions";
+@import "components/client-login-area";
+@import "components/blog-s2-grids";
+@import "components/pg-title-btm-menu";
+@import "components/pagination";
+@import "components/service-sidebar";
+@import "components/blog-sidebar";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style3";
+@import "page/about-pg";
+@import "page/time-line-pg";
+@import "page/clients-pg";
+@import "page/team-pg";
+@import "page/testimonials-pg";
+@import "page/faq-pg";
+@import "page/contact-pg";
+@import "page/careers-pg";
+@import "page/service-single-pg";
+@import "page/blog-pg";
+@import "page/blog-details-pg";
+@import "page/projects-pg";
+
+

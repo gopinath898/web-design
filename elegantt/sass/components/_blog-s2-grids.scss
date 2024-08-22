@@ -1,0 +1,80 @@
+/*-------------------------------------------
+## blog style 2 grids
+---------------------------------------------*/
+.blog-s2-grids {
+
+	.entry-details {
+		background-color: $white;
+		padding: 25px;
+		@include round-box-shadow(lighten($black, 90%));
+
+		@include media-query(767px) {
+			padding: 20px;
+		}
+	}
+
+	.entry-details h3 {
+		font-family: $base-font;
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		font-weight: 600;
+		line-height: 1.5em;
+		color: $heading-color;
+		margin: 0 0 0.5em;
+
+		@include media-query(1199px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.entry-details h3 a {
+		color: $heading-color;
+
+		&:hover {
+			color: $theme-primary-color;
+		}
+	}
+
+	.entry-date {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		color: #8d8d8d;
+		margin: 0;
+	}
+
+	.entry-footer {
+		overflow: hidden;
+		margin-top: 25px;
+
+		.read-more,
+		.comments {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 600;
+			color: $theme-primary-color;
+			display: inline-block;
+
+			@include media-query(1199px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		.read-more {
+			float: left;
+			&:hover {
+				color: darken($theme-primary-color, 10%);
+			}
+		}
+
+		.comments {
+			float: right;
+			color: #8d8d8d;
+
+			&:hover {
+				color: darken(#8d8d8d, 10%);
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+##	projects page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	all projects page
+--------------------------------------------------------------*/
+.projects-s1-pg .latest-projects {
+	background-image: none;
+	background-color: #e8e8e7;	
+	
+	@include media-query(1199px) {
+		padding: 100px 0;
+	}
+
+	@include media-query(991px) {
+		padding: 80px 0;
+	}
+
+	@include media-query(767px) {
+		padding: 70px 0;
+	}
+
+	&:before {
+		display: none;
+	}
+
+	.gallery-filters ul li {
+		@include media-query(767px) {
+			border-color: #cacaca;
+		}
+	}
+
+	.gallery-filters ul li a,
+	.gallery-filters ul li:after {
+		color: $theme-secondary-color;
+	}
+
+	.gallery-filters ul li a.current,
+	.gallery-filters ul li a:hover  {
+		color: $theme-primary-color;
+	}
+}
+
+.projects-s3-pg {
+	
+	.latest-porjects-s3 .grid .details {
+		opacity: 1;
+	}
+}

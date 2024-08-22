@@ -1,0 +1,53 @@
+/*-------------------------------------------
+## pagination
+---------------------------------------------*/
+.pagination {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+
+	ul {
+		display: inline-block;
+		padding: 5px;
+		overflow: hidden;
+	}
+
+	ul li {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin-right: 13px;
+		float: left;
+		@include round-box-shadow(lighten($black, 70%), 10px, 0);
+
+		@include media-query(767px) {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			margin-right: 10px;
+		}
+	}
+
+	ul li:last-child {
+		margin-right: 0;
+	}
+
+	ul li a {
+		background-color: $white;
+		display: block;
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		color: $heading-color;
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+	}
+
+	ul li.current a,
+	ul li a:hover {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+}

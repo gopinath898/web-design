@@ -1,0 +1,88 @@
+.clients-section .inner-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clients-section .inner-box .clients-logo {
+	position: relative;
+	display: block;
+}
+
+.clients-section .inner-box .clients-logo img {
+	display: block;
+	max-width: 100%;
+	width: auto;
+	margin: 0 auto;
+	opacity: 0.4;
+	transition: all 500ms ease;
+}
+
+.clients-section .inner-box .clients-logo:hover img {
+	opacity: 0.8;
+}
+
+.inner-boxes {
+	/* background-color: #2E3537; */
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+	/* background-color: #E1E2E2; */
+	height: 170px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.wrapper:before,
+.wrapper:after {
+	content: "";
+	position: absolute;
+	height: 130px;
+	width: 150px;
+	z-index: 2;
+}
+
+.wrapper:after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.wrapper:before {
+	left: 0;
+	top: 0;
+}
+
+.wrapper .track {
+	display: flex;
+	width: calc(250px * 10);
+	animation: scroll 15s 0.5s linear infinite;
+}
+
+.wrapper .clients {
+	width: 150px;
+	padding: 10px;
+}
+
+.wrapper .clients img {
+	height: 90px;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(calc(-150px * 8));
+	}
+}

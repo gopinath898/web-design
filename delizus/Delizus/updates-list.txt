@@ -1,0 +1,8 @@
+Delizus v1.1.1
+New added: homepage
+
+Delizus v1.1
+New added: dark color scheme with new typhograhpy
+New added: working reservation form
+Optimized CSS and JS files
+Reduce site loading time

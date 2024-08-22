@@ -1,0 +1,62 @@
+@mixin loremet-down {
+  border-top: $loremet-width solid;
+  border-right: $loremet-width solid transparent;
+  border-bottom: 0;
+  border-left: $loremet-width solid transparent;
+}
+
+@mixin loremet-up {
+  border-top: 0;
+  border-right: $loremet-width solid transparent;
+  border-bottom: $loremet-width solid;
+  border-left: $loremet-width solid transparent;
+}
+
+@mixin loremet-right {
+  border-top: $loremet-width solid transparent;
+  border-right: 0;
+  border-bottom: $loremet-width solid transparent;
+  border-left: $loremet-width solid;
+}
+
+@mixin loremet-left {
+  border-top: $loremet-width solid transparent;
+  border-right: $loremet-width solid;
+  border-bottom: $loremet-width solid transparent;
+}
+
+@mixin loremet($direction: down) {
+  @if $enable-loremet {
+    &::after {
+      display: inline-block;
+      margin-left: $loremet-spacing;
+      vertical-align: $loremet-vertical-align;
+      content: "";
+      @if $direction == down {
+        @include loremet-down();
+      } @else if $direction == up {
+        @include loremet-up();
+      } @else if $direction == right {
+        @include loremet-right();
+      }
+    }
+
+    @if $direction == left {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $loremet-spacing;
+        vertical-align: $loremet-vertical-align;
+        content: "";
+        @include loremet-left();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}

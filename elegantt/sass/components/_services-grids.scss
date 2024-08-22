@@ -1,0 +1,152 @@
+/*-------------------------------------------
+## services grids
+---------------------------------------------*/
+.services-grids .grid  {
+	min-height: 250px;
+	position: relative;
+
+	@include media-query(767px) {
+		min-height: 220px;
+	}
+
+	&:before {
+		content: "";
+		@include linear-gradient-overlay(top, transparent 20%, transparentize($black, 0.1));
+	}
+
+	.bg-image {
+		display: none;
+	}
+
+	.icon {
+		background-color: $theme-primary-color;
+		padding: 4px 9px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.icon .fi:before {
+		font-size: 35px;
+		font-size: calc-rem-value(35);
+		color: $white;
+
+		@include media-query(991px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+	}
+
+	.service-details {
+		width: 100%;
+		padding: 22px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		@include transition-time(0.3s);
+	}
+
+	&:hover .service-details {
+		background-color: $theme-primary-color;
+	}	
+
+	.service-details h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: normal;
+		margin: 0 0 0.3em;
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.service-details h3 a {
+		color: $white;
+	}
+
+	.service-details p {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		color: $white;
+		margin: 0;
+	}
+}
+
+
+/*** service s2 grids ***/
+.services-s2-grids {
+
+	.grid .img-holder {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.grid .img-holder img {
+		@include transition-time(0.5s);
+	}
+
+	.grid .img-holder:before {
+		content: "";
+		@include overlay(transparentize($theme-primary-color, 0.1));
+		z-index: 10;
+		opacity: 0;
+		@include transition-time(0.5s);
+	}
+
+	.grid:hover .img-holder:before {
+		opacity: 1;
+	}
+
+	.grid:hover .img-holder img {
+		@include scaling(1.2,1.2);
+	}
+
+	.grid .details {
+		padding: 25px 0;
+	}
+
+	.grid h3 {
+		font-size: 24px;
+		font-size: calc-rem-value(24);
+		font-weight: normal;
+		margin: 0 0 0.4em;
+
+		@include media-query(1199px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+
+		a {
+			color: $heading-color;
+		}
+	}
+
+	.grid h3 a:hover {
+		color: $theme-primary-color;
+	}
+
+	.grid p {
+		margin: 0 0 22px;
+	}
+
+	.grid .read-more {
+		font-weight: 600;
+		color: $theme-primary-color;
+
+		&:hover {
+			color: darken($theme-primary-color, 10%);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.page-title {
+	@include background-style("../images/page-title1.jpg", center center, cover, no-repeat, local);
+	height: 365px;
+	text-align: center;
+	position: relative;
+	display: table;
+	width: 100%;
+
+	@include media-query(1199px) {
+		height: 300px;
+	}
+
+	@include media-query(991px) {
+		height: 270px;
+	}
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($theme-secondary-color, 0.4));
+	}
+
+	.container {
+		width: 100%;
+		vertical-align: middle;
+		display: table-cell;
+		position: relative;
+	}
+
+	h1 {
+		font-size: 60px;
+		font-size: calc-rem-value(60);
+		color: $white;
+		margin: 0;
+
+		@include media-query(1199px) {
+			font-size: 45px;
+			font-size: calc-rem-value(45);
+		}
+
+		@include media-query(767px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+		}
+	}
+}
